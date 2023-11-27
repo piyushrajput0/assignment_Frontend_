@@ -1,0 +1,50 @@
+@import "config";
+@import "card";
+@import "navbar";
+@import "dashboard";
+@import "spinner";
+
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 8px;
+      height: 7px;
+      background-color: rgb(11, 218, 25);
+      border: 2px solid white;
+      border-radius: 50%;
+      position: absolute;
+      top: 22px;
+      left: 22px;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .user-avatar-unavailable {
+    width: 35px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 8px;
+      height: 7px;
+      background-color: #ada4a4;
+      border: 1.5px solid white;
+      border-radius: 50%;
+      position: absolute;
+      top: 22px;
+      left: 22px;
+      bottom: 0;
+      right: 0;
+    }
+  }
